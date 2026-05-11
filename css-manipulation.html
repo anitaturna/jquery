@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+   
+<div id="card">
+    <p>Hello jQuery</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dolorem assumenda reiciendis asperiores praesentium iusto vero dignissimos nihil quam temporibus ipsa dolor dicta rem. Porro beatae, eius, optio ipsa animi odio dolore, sapiente doloribus cumque ut deleniti vitae nobis officia! Ipsa fugit earum magnam nostrum nihil odio minus laboriosam obcaecati.</p>
+ <button id="btn">Click</button> </div>
+
+    
+    <script>
+
+        $('#btn').click(function (){
+
+            $('#card').css({
+                "color": "white",
+                "background-color": "red",
+                "width":"400px",
+                "border-radius": "15px",
+                "margin": "0 auto",
+                "padding":"5px",
+                "border":"2px solid black"
+            })
+
+        })
+
+    </script>
+
+</body>
+</html>
