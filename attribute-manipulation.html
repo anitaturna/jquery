@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <script src="jscript/jquery-4.0.0.min.js"></script>
+
+</head>
+<body>
+    <div> 
+        <h3>Welcome to The New Page</h3>
+        <a href="#" target="_blank">W3_school</a>
+
+        <img id="img" src="image/img1.jpg" alt="" width="400px"> <br>
+        <br>
+        <button id="btn">click to explore</button>
+    </div>
+
+    <script> 
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('#img').attr('width','300px')
+            })
+        })
+
+
+        $("a").attr("href","https://www.w3schools.com/");
+       
+        $("a").removeAttr("target");
+    </script>
+</body>
+</html>
