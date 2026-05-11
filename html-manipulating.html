@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="jscript/jquery-4.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+
 </head>
 <body>
-    <p id="pera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia qui vitae ducimus, reprehenderit ut deleniti eius quaerat? Dignissimos ipsum, praesentium voluptas adipisci eaque aspernatur nemo molestiae dolorum dicta quasi, consequatur veritatis neque rem quos, eveniet ipsam velit. Recusandae aperiam voluptatum eveniet dolorem tenetur ab iste impedit totam consequuntur harum?</p> /#pera
+    <div class="section">
+    <p id="pera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia qui vitae ducimus, reprehenderit ut deleniti eius quaerat? Dignissimos ipsum, praesentium voluptas adipisci eaque aspernatur nemo molestiae dolorum dicta quasi, consequatur veritatis neque rem quos, eveniet ipsam velit. Recusandae aperiam voluptatum eveniet dolorem tenetur ab iste impedit totam consequuntur harum?</p> <br> <br>
+   
+    <button id="btn">change text</button>
+    </div>
+    <script> 
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('#pera').before("my country") // peragraph er age kichu likha add hobe
+                $('#pera').after("my country") //peragraph er pore likha add hobe
+                $('#pera').before("my country") // old peragraph remove hobe new txt add hobe
+            })
+        })
 
-    <button id=""></button>
+    </script>
 </body>
 </html>
