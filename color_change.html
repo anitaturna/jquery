@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>color change</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <style>
+    .box{
+      width: 300px;
+      height: 200px;
+      margin: 50px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box"></div>
+
+  <script>
+    $(function () {
+
+      let colors = [
+        {
+          backgroundColor: "blue",
+          fontColor: "white",
+        },
+        {
+          backgroundColor: "green",
+          fontColor: "white",
+        },
+        {
+          backgroundColor: "red",
+          fontColor: "white",
+        },
+        {
+          backgroundColor: "yellow",
+          fontColor: "black",
+        },
+        {
+          backgroundColor: "pink",
+          fontColor: "black",
+        },
+        {
+          backgroundColor: "purple",
+          fontColor: "white",
+        },
+      ];
+
+      let i = 0;
+
+      setInterval(function () {
+
+        $(".box").css({
+          backgroundColor: colors[i].backgroundColor,
+          color: colors[i].fontColor
+        });
+
+        $(".box").html("<h1>" + colors[i].backgroundColor + "</h1>");
+
+        i++;
+
+        if (i > colors.length - 1) {
+          i = 0;
+        }
+
+      }, 1000);
+
+    });
+  </script>
+
+</body>
+</html>

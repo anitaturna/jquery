@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <script src="jscript/jquery-4.0.0.min.js"></script>
+    <script> 
+
+    </script>
+</head>
+<body>
+    Enter Your Name: 
+    <input type="text" name="" id="name"> <br> <br>
+    Enter Your Email:
+    <input type="text" name="" id="email"> <br> <br>
+     Enter Your address:
+    <input type="text" name="" id="address"> <br>  <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic fuga eligendi inventore dolorum eveniet facilis esse provident ut quibusdam?</p>
+    <script> 
+        $(document).ready(function(){
+            $("#name").blur(function(){
+                $(this).css(
+                    "background","green"
+                    
+                );
+            })   
+             $("#email").focus(function(){
+                $(this).css(
+                    "background","sky"
+                    
+                );
+            })   
+             $("#address").load(function(){
+                $(this).css(
+                    "background","red"
+                    
+                );
+            })   
+            
+            
+           });
+    </script>
+</body>
+</html>
